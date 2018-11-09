@@ -9,10 +9,8 @@ Introduction to programming and Programming Workshop
 To run this project you will need:
 1. ESP8266-01 WiFi module
 2. Python 3.6.4 
-3. Arduino IDE
-4. USB Interfase between ESP8266 and PC
-
-The libraries used are:
+3. Arduino IDE  
+The libraries used are:  
 * Arduino
 1. ESP8266WiFi.h
 2. WiFiUdp.h
@@ -24,7 +22,9 @@ The libraries used are:
 ## Getting Started
 This is an example of how to create an access point with ESP8266 module working with UDP Server.  
 Also, an UDP Python Client is included, in order to demostrate a simple connection.  
-This is an academic project, for that reason the internal documentation is in Spanish.  
+This is an academic project, for that reason the internal documentation is in Spanish.
+Please make sure the client device is connected to the network before sending messages.
+The AP ssid will be **CarWiFi**
 
 ### Server Side
 Once the power supply is connected, the module is going to start the Serial communication.  
@@ -48,14 +48,17 @@ If none response is given, a timeout exception will raise, and if the counter is
 If a new message is received, the counter sets to 10, convert the bytes to string and print it, as shown below, finally returns the incommig string.
 ```
 Try n°[1:9] to send message
-*
-*
+.
+.
 Message from Server {msg}
 ```
+### Tutorials
+- [Programming ESP8266 with Arduino](https://www.hackster.io/harshmangukiya/how-to-program-esp8266-with-arduino-uno-efb05f)
+- [Install ESP8266WiFi.h](http://esp8266.github.io/Arduino/versions/2.0.0/doc/installing.html)
 
 ### Known problems
 In my computer (toshiba ultrabook satellite u940) the controller resets when is trying to connecto to the AP.
-The AP resets, this can be cause by an exception in the software or lack of power supply.   
+The AP resets after a while, this can be cause by an exception in the software or lack of power.   
 ## Author
 Santiago Gamboa Ramírez  
 santigr17@gmail.com  
